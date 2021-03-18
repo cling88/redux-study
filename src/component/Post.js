@@ -35,7 +35,7 @@ function Post(props) {
                         <ul>
                             {
                                 users.map(user => (
-                                    <li key={user.id}>{ user.name } ({ user.email })</li>
+                                    <li key={user.id}>{ user.name }aa ({ user.email })</li>
                                 ))
                             }
                         </ul>
