@@ -4,6 +4,10 @@ import { delay, put, takeEvery, takeLatest } from 'redux-saga/effects'
  ** saga ref
  - put(action) : middleware 에서 다음으로 실행할 새 액션을 디스패치함 
  - takeEvery : 액션을 모니터링하고 실행 시킴 
+
+ takeEvery 는 2번 빠르게 클릭시 2번 호출됨. 만약 그게 싫다면 
+ takeLatest 로 실행하게되면 2번 빠르게 클릭해도 이전 것은 무시되고 마지막에 클릭된것만 호출됨. 즉, 1번만 호출! 
+ 
 */
 
 
