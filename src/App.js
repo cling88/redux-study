@@ -1,10 +1,10 @@
 
+import PostContainer from './component/PostContainer'
 
 function App() {
   return (
     <div className="App">
-      Skeleton <br/>
-      Empty React Structure
+      <PostContainer />
     </div>
   );
 }
