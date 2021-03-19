@@ -28,7 +28,7 @@ function Post(props) {
             </section>
             <br/><hr/><br/>
             <section>
-                <h2>POST</h2>
+                <h2>Users</h2>
                 { loadingUsers && 'LOADING...' }
                 {
                     !loadingUsers && users && (

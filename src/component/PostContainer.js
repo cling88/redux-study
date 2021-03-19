@@ -18,6 +18,9 @@ function PostContainer(props) {
         getUsers(1)
     }, [getPost, getUsers])
     
+    useEffect(() => {
+        console.log(">> list : ", list)
+    }, [list])
 
     return (
         <div>

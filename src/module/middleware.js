@@ -1,3 +1,4 @@
+// saga 미들웨어로 대체되어 사용하지 않음, 소스비교를 위해 냄겨둠
 import { startLoading, finishLoading } from '../redux/loading'
 
 const middleware = (type, request) => {  // 액션함수, api호출

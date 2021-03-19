@@ -3,7 +3,7 @@ import { combineReducers } from 'redux'
 import { all } from 'redux-saga/effects'
 
 import counter, { counterSaga } from './counter'
-import post from './post'
+import post, { postSaga } from './post'
 import loading from './loading'
 
 
@@ -14,7 +14,7 @@ const rootReducer = combineReducers({
 })
 
 export function* rootSaga(){
-    yield all([counterSaga()])
+    yield all([counterSaga(), postSaga()])
 }
 
 export default rootReducer
